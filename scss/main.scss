@@ -1,7 +1,7 @@
 
 .bs-example {
   height: 100vh;
-  width: 100vw;
+  //width: 100vw;
 }
 
 
@@ -21,7 +21,7 @@
     
     background: rgb(44,123,153);
     height: 600px;
-    width: 100vw;
+    width: 100%;
     
     box-shadow: 0 -2px 1px rgba(0,0,0,.15);
     border-top: 1px solid rgba(255,255,255,.2);
@@ -32,7 +32,7 @@
     
   }
 button.btn.btn-link.collapsed::before{
-  content: "\f000";
+  content: "+";
 }
 button.btn.btn-link::before {
     content: '-';
