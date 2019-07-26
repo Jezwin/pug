@@ -1,5 +1,5 @@
 .bs-example {
-  height: 100vh; }
+  height: 158vh; }
 
 .hero {
   position: fixed;
@@ -10,7 +10,7 @@
 
 .content {
   position: absolute;
-  z-index: 1000;
+  z-index: 0;
   top: 62.7vh;
   background: #2c7b99;
   height: 600px;
