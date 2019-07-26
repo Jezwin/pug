@@ -1,9 +1,12 @@
 "use strict";
 
-$(document).on("scroll", function () {
-  if ($(document).scrollTop() > 86) {
-    $("#banner").addClass("shrink");
-  } else {
-    $("#banner").removeClass("shrink");
-  }
+$(window).scroll(function (e) {
+  parallax();
 });
+
+function parallax() {
+  var scrolled = $(window).scrollTop();
+  $('.hero').css('top', -(scrolled * 0.0315) + 'rem');
+}
+
+;

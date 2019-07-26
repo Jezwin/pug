@@ -10,6 +10,7 @@ head
   // Bootstrap 4 CSS
   link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
 
+
 .container(itemscope)
   nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top
     a.navbar-brand(href='#') Navbar
@@ -38,52 +39,49 @@ head
         button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
 
 
-// First Parallax Section
-.jumbotron.paral.paralsec(itemscope style={'margin-bottom':'0'})
-  h1.display-3(itemprop="Heading") Here is a heading 1
-  p.lead(itemprop="Text") Here is a short description 1
+.jumbotron.jumbotron-fluid.hero
+  .containerjump
+    h1.display-4 Fluid jumbotron
+    p.lead
+      | This is a modified jumbotron that occupies the entire horizontal space of its parent.
+    
+section.content
 
-// Second Parallax Section
-.jumbotron.paral.paralsec1(style={'margin-bottom':'0'})
-  h1.display-3(itemprop="Heading") Here is a heading 2
-  p.lead(itemprop="Text") Here is a short description 2
-  
-
-.bs-example(itemscope)
-#accordionExample.accordion
-  .card
-    #headingOne.card-header
-      h2.mb-0(itemprop="HTML")
-        button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseOne', style={color: 'blue'})
-          //i.fa.fa-plus
-          |  What is HTML?
-    #collapseOne.collapse(aria-labelledby='headingOne' data-parent='#accordionExample')
-      .card-body
-        p
-          | HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages.
-          a(href='https://www.tutorialrepublic.com/html-tutorial/' target='_blank') Learn more.
-  .card
-    #headingTwo.card-header
-      h2.mb-0(itemprop="Bootstrap")
-        button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseTwo', style={color: 'blue'})
-          //i.fa.fa-plus
-          |  What is Bootstrap?
-    #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
-      .card-body
-        p
-          | Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions.
-          a(href='https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/' target='_blank') Learn more.
-  .card
-    #headingThree.card-header
-      h2.mb-0(itemprop="CSS")
-        button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseThree', style={color: 'blue'})
-          //i.fa.fa-plus
-          |  What is CSS?
-    #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
-      .card-body
-        p
-          | CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc.
-          a(href='https://www.tutorialrepublic.com/css-tutorial/' target='_blank') Learn more.  
+  .bs-example(itemscope)
+  #accordionExample.accordion
+    .card
+      #headingOne.card-header
+        h2.mb-0(itemprop="HTML")
+          button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseOne', style={color: 'blue'})
+            //i.fa.fa-plus
+            |  What is HTML?
+      #collapseOne.collapse(aria-labelledby='headingOne' data-parent='#accordionExample')
+        .card-body
+          p
+            | HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages.
+            a(href='https://www.tutorialrepublic.com/html-tutorial/' target='_blank') Learn more.
+    .card
+      #headingTwo.card-header
+        h2.mb-0(itemprop="Bootstrap")
+          button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseTwo', style={color: 'blue'})
+            //i.fa.fa-plus
+            |  What is Bootstrap?
+      #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+        .card-body
+          p
+            | Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions.
+            a(href='https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/' target='_blank') Learn more.
+    .card
+      #headingThree.card-header
+        h2.mb-0(itemprop="CSS")
+          button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseThree', style={color: 'blue'})
+            //i.fa.fa-plus
+            |  What is CSS?
+      #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
+        .card-body
+          p
+            | CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc.
+            a(href='https://www.tutorialrepublic.com/css-tutorial/' target='_blank') Learn more.  
 
 // Footer Section
 footer.wn-footer
@@ -94,4 +92,5 @@ footer.wn-footer
 script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
 script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous')
 script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous')
+script(src='js/demo.js')
 

@@ -1,3 +1,9 @@
-$(document).on("scroll", function(){
-    if
-  ($(document).scrollTop() > 86){
+$(window).scroll(function(e){
+  parallax();
+});
+
+function parallax(){
+  var scrolled = $(window).scrollTop();
+  $('.hero').css('top',-(scrolled*0.0315)+'rem');
+
+};
