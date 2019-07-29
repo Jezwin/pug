@@ -10,3 +10,8 @@ function parallax() {
 }
 
 ;
+$(document).ready(function () {
+  $("#accordionExample").click(function () {
+    $("#navbarSupportedContent").removeClass("show");
+  });
+});

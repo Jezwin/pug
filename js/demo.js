@@ -7,3 +7,8 @@ function parallax(){
   $('.hero').css('top',+(scrolled*0.0315)+'rem');
 
 };
+$(document).ready(function(){
+  $("#accordionExample").click(function(){
+    $("#navbarSupportedContent").removeClass("show");
+  });
+ });
