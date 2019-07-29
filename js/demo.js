@@ -12,3 +12,19 @@ $('body').click(function(event){
     $(".navbar > .navbar-collapse").removeClass("show");
   }
 });
+
+// //- Opening accordion based on URL
+// var url = document.location.toString();
+// if ( url.match('#') ) {
+//     $('#'+url.split('#')[1]).addClass('show');
+// }
+
+
+// //- Collapse on Hover
+// $(".card-header").parent('.card').hover(
+//   function() {
+//     $(this).children('.collapse').addClass('show');
+//   }, function() {
+//     $(this).children('.collapse').collapse('hide');
+//   }
+// );
