@@ -7,8 +7,8 @@ function parallax(){
   $('.hero').css('top',+(scrolled*0.0315)+'rem');
 
 };
-$(document).ready(function(){
-  $("#accordionExample").click(function(){
-    $("#navbarSupportedContent").removeClass("show");
-  });
- });
+$('body').click(function(event){
+  if ($('.navbar').find(event.target).length === 0){
+    $(".navbar > .navbar-collapse").removeClass("show");
+  }
+});
