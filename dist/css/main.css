@@ -7,7 +7,7 @@
 .content {
   z-index: 0;
   background: #2c7b99;
-  height: 500px;
+  height: 400px;
   width: 100%;
   box-shadow: 0 -2px 1px rgba(0, 0, 0, 0.15);
   border-top: 1px solid rgba(255, 255, 255, 0.2); }
@@ -15,8 +15,8 @@
 .containerjump {
   text-align: center; }
 
-.jumpotron {
-  margin-bottom: 0rem; }
+.jumbotron {
+  margin-bottom: 0rem !important; }
 
 button.btn.btn-link.collapsed::before {
   content: "+"; }

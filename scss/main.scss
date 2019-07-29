@@ -1,29 +1,29 @@
 
-
-
-  .hero {
-    position: relative;
-    z-index: -1;
-    top: 0;
-    width: 100%;
-    
-  }
+.hero {
+  position: relative;
+  z-index: -1;
+  top: 0;
+  width: 100%;
   
-  .content {
-    z-index: 0;  
-    background: rgb(44,123,153);
-    height: 500px;
-    width: 100%;
-    box-shadow: 0 -2px 1px rgba(0,0,0,.15);
-    border-top: 1px solid rgba(255,255,255,.2);
-  }
-  .containerjump{
-    text-align: center;
-    
-  }
-  .jumpotron {
-    margin-bottom: 0rem;
-  }
+}
+
+.content {
+  z-index: 0;  
+  background: rgb(44,123,153);
+  height: 400px;
+  width: 100%;
+  box-shadow: 0 -2px 1px rgba(0,0,0,.15);
+  border-top: 1px solid rgba(255,255,255 ,.2);
+}
+.containerjump{
+  text-align: center;
+  
+}
+.jumbotron {
+  margin-bottom: 0rem !important;
+ 
+
+}
 button.btn.btn-link.collapsed::before{
   content: "+";
 }
