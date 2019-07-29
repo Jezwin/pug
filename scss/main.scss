@@ -1,35 +1,28 @@
 
-.bs-example {
-  height: 158vh;
-  //width: 100vw;
-}
 
 
   .hero {
-    position: fixed;
+    position: relative;
     z-index: -1;
     top: 0;
-    height: 479px;
-    width: 100vw;
-    //background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+    width: 100%;
+    
   }
   
   .content {
-    position: absolute;
-    z-index: 0;
-    top: 62.7vh;
-    
+    z-index: 0;  
     background: rgb(44,123,153);
-    height: 600px;
+    height: 500px;
     width: 100%;
-    
     box-shadow: 0 -2px 1px rgba(0,0,0,.15);
     border-top: 1px solid rgba(255,255,255,.2);
   }
   .containerjump{
     text-align: center;
-    margin-top: 80px;
     
+  }
+  .jumpotron {
+    margin-bottom: 0rem;
   }
 button.btn.btn-link.collapsed::before{
   content: "+";

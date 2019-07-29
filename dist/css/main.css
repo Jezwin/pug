@@ -1,26 +1,22 @@
-.bs-example {
-  height: 158vh; }
-
 .hero {
-  position: fixed;
+  position: relative;
   z-index: -1;
   top: 0;
-  height: 479px;
-  width: 100vw; }
+  width: 100%; }
 
 .content {
-  position: absolute;
   z-index: 0;
-  top: 62.7vh;
   background: #2c7b99;
-  height: 600px;
+  height: 500px;
   width: 100%;
   box-shadow: 0 -2px 1px rgba(0, 0, 0, 0.15);
   border-top: 1px solid rgba(255, 255, 255, 0.2); }
 
 .containerjump {
-  text-align: center;
-  margin-top: 80px; }
+  text-align: center; }
+
+.jumpotron {
+  margin-bottom: 0rem; }
 
 button.btn.btn-link.collapsed::before {
   content: "+"; }

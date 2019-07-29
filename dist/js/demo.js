@@ -6,7 +6,7 @@ $(window).scroll(function (e) {
 
 function parallax() {
   var scrolled = $(window).scrollTop();
-  $('.hero').css('top', -(scrolled * 0.0315) + 'rem');
+  $('.hero').css('top', +(scrolled * 0.0315) + 'rem');
 }
 
 ;
