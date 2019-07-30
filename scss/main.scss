@@ -1,10 +1,17 @@
-
-.hero {
-  position: relative;
-  z-index: -1;
-  top: 0;
-  width: 100%;
+.jumbotron {
+  margin-bottom: 0rem !important;
   
+  &__parallax {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &--textalign-center {
+    text-align: center;
+  }
+
 }
 
 .content {
@@ -15,15 +22,7 @@
   box-shadow: 0 -2px 1px rgba(0,0,0,.15);
   border-top: 1px solid rgba(255,255,255 ,.2);
 }
-.containerjump{
-  text-align: center;
-  
-}
-.jumbotron {
-  margin-bottom: 0rem !important;
- 
 
-}
 .btn.btn-link{
   &::after {
     content: "-";

@@ -1,8 +1,12 @@
-.hero {
-  position: relative;
-  z-index: -1;
-  top: 0;
-  width: 100%; }
+.jumbotron {
+  margin-bottom: 0rem !important; }
+  .jumbotron__parallax {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: -1; }
+  .jumbotron--textalign-center {
+    text-align: center; }
 
 .content {
   z-index: 0;
@@ -11,12 +15,6 @@
   width: 100%;
   box-shadow: 0 -2px 1px rgba(0, 0, 0, 0.15);
   border-top: 1px solid rgba(255, 255, 255, 0.2); }
-
-.containerjump {
-  text-align: center; }
-
-.jumbotron {
-  margin-bottom: 0rem !important; }
 
 .btn.btn-link::after {
   content: "-";
