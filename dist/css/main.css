@@ -9,12 +9,12 @@
     text-align: center; }
 
 .content {
-  z-index: 0;
-  background: #2c7b99;
+  background: #6a5acd;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 -2px 1px rgba(0, 0, 0, 0.15);
   height: 600px;
   width: 100%;
-  box-shadow: 0 -2px 1px rgba(0, 0, 0, 0.15);
-  border-top: 1px solid rgba(255, 255, 255, 0.2); }
+  z-index: 0; }
 
 .btn.btn-link::after {
   content: "-";

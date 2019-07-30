@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .jumbotron {
   margin-bottom: 0rem !important;
   
@@ -15,12 +17,13 @@
 }
 
 .content {
-  z-index: 0;  
-  background: rgb(44,123,153);
+  background: $slateblue;
+  border-top: 1px solid rgba($white, .2);
+  box-shadow: 0 -2px 1px rgba($black, .15);
   height: 600px;
   width: 100%;
-  box-shadow: 0 -2px 1px rgba(0,0,0,.15);
-  border-top: 1px solid rgba(255,255,255 ,.2);
+  z-index: 0;  
+  
 }
 
 .btn.btn-link{
