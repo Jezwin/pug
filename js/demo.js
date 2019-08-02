@@ -13,12 +13,18 @@ $('body').click(function(event){
   }
 });
 
-// //- Opening accordion based on URL
-// var url = document.location.toString();
-// if ( url.match('#') ) {
-//     $('#'+url.split('#')[1]).addClass('show');
-// }
-
+//- Opening accordion based on URL
+var url = document.location.toString();
+if ( url.match('#') ) {
+    var hash = url.split('#')[1];
+    // collapse the expanded panel
+    $('.btn.btn-link').addClass('collapsed');
+    $('.collapse').removeClass('show');
+  
+    // expand the requested panel
+    $('#' + hash).addClass('show');
+    $('[data-target="#'+ hash +'"]').removeClass('collapsed');
+}
 
 // //- Collapse on Hover
 // $(".card-header").parent('.card').hover(

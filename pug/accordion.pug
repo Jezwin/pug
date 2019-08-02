@@ -1,8 +1,8 @@
-#accordionExample.accordion
+#accordionExample.accordion(itemscope)
   .card
     #headingOne.card-header
       h2.mb-0
-        button.btn.btn-link(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+        button.btn.btn-link(itemprop="Collapsible Group Item #1" type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
           | Collapsible Group Item #1
     #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
       .card-body
@@ -10,7 +10,7 @@
   .card
     #headingTwo.card-header
       h2.mb-0
-        button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+        button.btn.btn-link.collapsed(itemprop="Collapsible Group Item #2" type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
           | Collapsible Group Item #2
     #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
       .card-body
@@ -18,7 +18,7 @@
   .card
     #headingThree.card-header
       h2.mb-0
-        button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+        button.btn.btn-link.collapsed(itemprop="Collapsible Group Item #3" type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
           | Collapsible Group Item #3
     #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
       .card-body
